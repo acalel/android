@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnseleccion"
+        android:layout_width="162dp"
+        android:layout_height="62dp"
+        android:text="Seleccionar Opcion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <ImageView
+        android:id="@+id/imgfoto"
+        android:layout_width="249dp"
+        android:layout_height="174dp"
+        app:layout_constraintBottom_toTopOf="@+id/codemple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595"
+        app:srcCompat="@drawable/icono" />
+
+    <EditText
+        android:id="@+id/codemple"
+        android:layout_width="247dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="324dp"
+        android:ems="10"
+        android:hint="Ingrese el Codigo Empleado"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomemple"
+        android:layout_width="248dp"
+        android:layout_height="34dp"
+        android:text="Nombre Empleado"
+        app:layout_constraintBottom_toTopOf="@+id/btnseleccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codemple" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
